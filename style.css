@@ -1,13 +1,41 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: rgb(220, 220, 220);
+  font-family: "Roboto", sans-serif;
 }
 
-canvas {
-  display: block;
-}
-
-.row {
+.content {
   display: flex;
+  margin: 0 auto;
+  margin-top: 8%;
+  justify-content: center;
+}
+
+.content img {
+  position: absolute;
+  margin-top: -5%;
+  width: 550px;
+  height: 550px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.results {
+  margin-top: 10%;
+  text-align: center;
+  font-size: x-large;
+}
+
+.clearButton {
+  display: flex;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
 }

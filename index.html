@@ -2,22 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Sketch</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <script src="libraries/p5.min.js"></script>
   </head>
 
   <body>
     <script src="sketch.js"></script>
-    <div id="canvas"></div>
 
-    <div class="row">
-      <button onclick="clearCanvas()">Clear</button>
-      <div id="status"></div>
+    <div class="header">
+      <h1>DoodleNet Drawing</h1>
+      <p>Draw something and AI will try to guess what is it. Enjoy!</p>
     </div>
+    <button class="clearButton" onclick="clearCanvas()">Clear canvas</button>
+    <div class="content">
+      <img
+        width="128"
+        height="128"
+        alt="frame"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Frame.svg/444px-Frame.svg.png"
+      />
+      <div id="canvas"></div>
+    </div>
+    <div id="status" class="results"></div>
   </body>
 </html>
