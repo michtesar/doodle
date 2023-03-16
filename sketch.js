@@ -9,7 +9,7 @@ function setStatus(text) {
 function setup() {
   canvas = createCanvas(600, 600)
   canvas.parent("canvas")
-  backgroundColor = color(225, 225, 255)
+  backgroundColor = color(255, 255, 255)
   background(backgroundColor)
   doodleClassifier = ml5.imageClassifier("DoodleNet", modelReady)
 }
